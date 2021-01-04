@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1400px;
+    margin: auto;
+}
+html{
+    -webkit-filter: grayscale(.95);
+}
+.header {
+    height: 78px;
+    margin: 30px auto;
+}
+
+.nav {
+    float: left;
+    width: 1400px;
+    margin-left: 15px;
+    margin-right: 60px;
+    background-color: #ffd600;
+    position: fixed;
+    position: fixed;
+    top: 0;
+
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    height: 78px;
+    padding: 0 12px;
+    margin-right: 13px;
+    line-height: 78px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: #515256;
+    color: #ffd600
+}
+
+.nav ul li a:active {
+    background-color: #131211;
+}
+
+.logo {
+    float: left;
+    width: 551px;
+    height: 78px;
+
+}
+
+.search {
+    float: left;
+    width: 350px;
+    height: 78px;
+    margin-left: 20px;
+}
+
+.search input {
+    float: left;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ffd600;
+    border-right: none;
+    color：#bfbfbf;
+    font-size: 14px;
+    margin-top: 24px;
+    padding-left: 12px;
+}
+
+.search button {
+    margin-top: 25px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url(pics/search3.jpg) no-repeat;
+}
+
+.compte {
+    float: left;
+    width: 80px;
+    padding-left: 20px;
+    height: 78px;
+}
+
+li {
+    list-style: none;
+}
+
+.change {
+    margin: 10px;
+}
+
+.banner {
+    margin-top: -40px;
+    height: 500px;
+    background: url(pics/background2.jpg) top center;
+    background-attachment: fixed;
+}
+
+.photo {
+    float: left;
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+.intro {
+    float: left;
+    width: 600px;
+    height: 450px;
+    padding: 70px;
+}
+
+.intro h1 {
+    color: #ffd600;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    text-align: left;
+    color: #ffd600;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.goods {
+    height: 1200px;
+    margin-top: 78px;
+
+}
+
+.goods ul li {
+    float: left;
+    width: 430px;
+    height: 560px;
+    background-color: #f7f7f7;
+    margin: 10px 15px 10px;
+}
+
+
+.love {
+    width: 430px;
+    height: 60px;
+
+}
+
+.love img {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+button{
+    border:none;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.article {
+    padding: 0 35px 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.prix {
+    font-size: 15px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.footer {
+
+    height: 460px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    margin-top: 78px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 350px;
+    height: 70px;
+    padding-left: 25px;
+}
+
+#lastone {
+    width: 230px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 8px;
+
+}
+
+.service_txt {
+    margin-top: 10px;
+
+}
+
+.service_txt h4 {
+    font-size: 18px;
+}
+
+.service_txt p {
+    font-size: 12px;
+
+}
+
+.mod_help {
+    height: 230px;
+    padding-top: 10px;
+    padding-left: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.ecusson {
+    float: left;
+    width: 25%;
+    height: 220px;
+}
+
+.ecusson a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.ecusson dl a:hover {
+    border-bottom: 1px solid black;
+}
+
+.ecusson dl {
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.ecusson dt {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ecusson dd {
+
+    font-size: 14px;
+    color: #757575;
+}
+
+.socialtitle {
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pic1 {
+    float: left;
+    width: 25%;
+    height: 80px;
+    background-color: #black;
+    padding-top: 30px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.footer-bottom a:hover {
+    border-bottom: 1px solid black;
+}
+.groupe{
+    font-size: 10px;
+    color:#757575;
+}
+
+.devis-content{
+    height: 700px;
+    width: 1400px;
+    background-color: #e8e8e8;
+    margin:0 auto;
+}
+.devis-form{
+    float: right;
+    margin-top: -60px;
+    height: 700px;
+    width: 550px;
+}
+.devis-pics{
+    float: left;
+    width: 700px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+.commentaire{
+    font-size: 14px;
+    font-weight: bold;
+}
+.contact-form{
+    height: 800px;
+    margin-top:10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    line-height: 35px;
+    background-color: #e8e8e8;
+}
+.top{
+    height: 84px;
+    border-bottom: 1px solid #ccc;
+}
+.resisterarea{
+    height: 522px;
+    width: 400px;
+    border:1px solid #ccc;
+}
+.resisterarea h3{
+    height: 42px;
+    border-bottom:1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.reg-form{
+    width: 600px;
+    background-color: pink;
+    margin: 50px auto 0;
+}
+.reg-form ul li label{
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+
+}
+.reg-form ul li input{
+    width: 240px;
+    height: 50px;
+    border:
+}
+.error{
+    color:red;
+}

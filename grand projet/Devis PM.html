@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Paul et Martin</title>
+<style>
+ul {list-style-type: none;
+  margin: 0;
+  padding: 0;}
+  input:invalid {border: 2px dashed red;}
+  input:valid {border: 2px solid black;}
+  </style>
+</head>
+
+
+<body style="text-align:center;">
+<h1>Devis</h1>
+<form action="/devis.php" method="post">
+
+  <legend>Créer votre écusson idéal !</legend>
+  <p>Remplir ce devis pour créer votre produit original dans 5 minutes sans attente !</p>
+
+  <ul>
+    <li><label>
+      <input autocomplete="on" type="text" value="Prénom" id="first" maxlength="50" name="username" required
+     onFocus="if (value =='Prénom'){value =''}" onBlur="if (value ==''){value='Prénom';}" /></label></li>
+     <li><label>
+   <input autocomplete="on" type="text" value="Nom" id="last" maxlength="50" name="last"required
+   onFocus="if (value =='Nom'){value =''}" onBlur="if (value ==''){value='Nom';}" /></label></li>
+    <li><label>
+        <input autocomplete="on" type="text"  value="Nom de Société" id="societe" maxlength="50" name="societe"required
+        onFocus="if (value =='Nom de Société'){value =''}" onBlur="if (value ==''){value='Nom de Société';}" /></label></li>
+    <li><label>
+      <input autocomplete="on" type="email"  value="E-mail" id="email" name="email"
+      onFocus="if (value =='E-mail'){value =''}" onBlur="if (value ==''){value='E-mail';}" /></label></li>
+    <li><label>
+        <input autocomplete="on" type="text"  value="Numéro de téléphone" id="tel" name="tel"
+        required pattern="[0-9]{2}[ -][0-9]{2}[ -][0-9]{2}[ -][0-9]{2}[ -][0-9]{2}"
+        onFocus="if (value =='Numéro de téléphone'){value =''}" onBlur="if (value ==''){value='Numéro de téléphone';}" /></label></li>
+    <li><label>
+            <input autocomplete="on" type="text"  value="Adresse de facturation" name="adfac" id="adfac" maxlength="100"
+            onFocus="if (value =='Adresse de facturation'){value =''}" onBlur="if (value ==''){value='Adresse de facturation';}" /></label></li>
+    <li><label>
+                <input autocomplete="on" type="text"  value="Adresse de livraison" id="adliv" maxlength="100"
+                name="adliv"required onFocus="if (value =='Adresse de livraison'){value =''}" onBlur="if (value ==''){value='Adresse de livraison';}" /></label></li>
+
+<em>Si vous souhaitez vous faire livrer à une autre adresse, veuillez remplir la champ de l'adresse de facturation. </em>
+
+<p>Produit:
+<input type="text" list="typepro" name="produit">
+<datalist id="typepro">
+  <option value="écusson">
+  <option value="autre">
+</datalist>
+<p>le Pourcentage de Broderie:
+<input type="text" list="pourcentagebro" name="broderie">
+<datalist id="pourcentagebro">
+  <option value="50">
+  <option value="70">
+  <option value="80">
+  <option value="100">
+</datalist>
+<p>le dos:
+<input type="text" list="typedos" name="dos">
+<datalist id="typedos">
+  <option value="autocollant">
+  <option value="thermo-collant">
+  <option value="rien du tout">
+  <option value="velcro">
+</datalist>
+    <p><label>Message<br>
+  <em>Laissez votre comment et nous serons vous contacter dans au plus 3 jours !</em><br>
+
+  <br>
+  <textarea name="comment" rows="10" cols="100"></textarea></label></p>
+
+
+
+username.focus()
+  </ul>
+  <input type="submit" value="Envoyer"><input type="reset" value="Réinitialiser">
+
+
+  </form>
+  </body>
+  </html>

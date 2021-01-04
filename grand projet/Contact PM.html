@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Paul et Martin</title>
+<style>
+ul {list-style-type: none;}
+  </style>
+</head>
+<body style="background-color:#DAC9A6;">
+<h1>Contact</h1>
+
+
+<form action="/devis.php" method="post" name="contact">
+
+
+  <legend>Contactez-nous !</legend>
+  <p>Si vous avez des idées, des problèmes ou des conseils, n'hesitez pas à nous contacter !</p>
+
+<ul>
+  <li><label>
+    <input type="text" value="Prénom" first="username" id="first"></label></li>
+  <li><label>
+    <input type="text"  value="Nom" name="last" id="last" maxlength="50"></label></li>
+  <li><label>
+    <input type="text"  value="E-mail" name="email" id="email" maxlength="50"></label></li>
+  <li><label>
+      <input type="text"  value="Numéro de téléphone" name="tel" id="tel" maxlength="50"></label></li>
+
+  <p>Message<br>
+<em>Laissez votre Commentaire et nous allons vous contacter dans un meillure délais !</em><br>
+<p>Sujet:
+<input type="text" list="typesuj" name="sujet">
+<datalist id="typesuj">
+	<option value="Question">
+	<option value="Problème">
+	<option value="Conseille">
+	<option value="Commentaire">
+</datalist>
+<br>
+<textarea name="commentaire" rows="5" cols="50"></textarea></p>
+
+
+
+
+</ul>
+<input type="submit" value="Envoyer"><input type="reset" value="Réinitialiser">
+
+</form>
+</body>
+</html>

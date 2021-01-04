@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAUL&MARTIN-Contact</title>
+  <link rel="shortcut icon" href="favicon2.ico" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header w">
+    <div class="nav">
+      <ul>
+        <li><a href="Index.html">INDEX</a></li>
+        <li><a href="Devis.html">DEVIS</a></li>
+        <li><a href="Index.html">GALERIE</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+      </ul>
+      <div class="logo">
+        <a href="2.html">
+          <img src="pics/1.png" alt="">
+        </a>
+      </div>
+      <div class="search">
+        <input type="text" value="Veuillez saisir le mot clé"
+          onFocus="if (value =='Veuillez saisir le mot clé'){value =''}"
+          onBlur="if (value ==''){value='Veuillez saisir le mot clé';}" />
+        <button></button>
+      </div>
+      <div class="compte">
+        <a href="">
+          <img src="pics/compte2.png" alt="" class="change">
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="banner">
+    <div class="content w">
+      <div class="photo">
+        <img src="pics/background8.jpg" alt="">
+      </div>
+      <div class="intro">
+        <h1>A votre côté</h1>
+        <p class="introduction">
+          Face à la situation exceptionnelle, nous restons à vos côtés. Toutes les mesures que nous mettons en œuvre
+          pour continuer à répondre au mieux à vos attentes sont ici.
+          <br>
+          Nous ne sommes pas en mesure de vous répondre par téléphone actuellement mais nous mettons tout en œuvre pour
+          répondre à vos questions urgentes par mail ou par chat.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form w">
+    <h1>Contactez-nous!</h1>
+    <form>
+      <p>Si vous avez une idée, un problème ou un conseil, ne hésitez pas à nous contacter !</p>
+      <ul>
+        La satisfaction <input type="radio" name="satisfaction" checked="checked" id="iden5"><label for="iden5">Très
+          bien&nbsp;</label>
+        <input type="radio" name="satisfaction" id="iden6"><label for="iden6"></label>Assez bien&nbsp;</label>
+        <input type="radio" name="satisfaction" id="iden7"><label for="iden7">Bien&nbsp;</label>
+        <input type="radio" name="satisfaction" id="iden8"><label for="iden8">Insatisfaisant</label>
+        <li><label>
+            Nom: <input type="text" name="prenom" id="nom" οnblur="checknom()" value=""></label><span
+            id="nomerror"></span>
+        </li>
+        <li><label>
+            Prénom: <input type="text" name="prenom" id="prenom" value="" οnblur="checkprenom()" required></label><span
+            id="prenomerror"></span></li>
+        <li><label>
+            E-mail: <input type="text" name="email" id="email" value="" οnblur="checkemail()" required></label><span
+            id="emailerror"></span></li>
+        <li><label>
+            Téléphone: <input type="text" name="tel" id="tel" value="" οnblur="checktel()" required></label><span
+            id="telerror"></span></li>
+        Vous êtes：
+        <input type="checkbox" name="kind" id="iden"><label for="iden" required>Personne&nbsp;</label>
+        <input type="checkbox" name="kind" id="iden2"><label for="iden2" required>Entreprise&nbsp;</label>
+        <input type="checkbox" name="kind" id="iden3"><label for="iden3" required>Université/Ecole&nbsp;</label>
+        <input type="checkbox" name="kind" id="iden4"><label for="iden4" required>Autres</label>
+
+        <h2>Message</h2>
+        <em>Laissez votre commentaire et nous allons vous contacter dans au plus 3 jours !</em><br>
+        <p>Sujet:
+          <input type="text" list="typesuj" name="sujet" required>
+          <datalist id="typesuj">
+            <option value="Question">
+            <option value="Problème">
+            <option value="Conseille">
+            <option value="Commentaire">
+          </datalist>
+          <br>
+
+          <textarea name="comment" rows="10" cols="100"></textarea>
+          </label></p>
+
+      </ul>
+      <input type="submit" onclick="verification()" value=" Envoyer"><input type="reset" value="Réinitialiser">
+    </form>
+  </div>
+  <footer class="footer ">
+    <div class="w">
+      <div class="mod_service">
+        <ul>
+          <li>
+            <h5>
+              <img src="pics/paiement1.png" alt="">
+            </h5>
+            <div class="service_txt">
+              <h4>Paiement sécurisé</h4>
+              <p> Paiement 100% sécurisé </p>
+            </div>
+          </li>
+          <li>
+            <h5>
+              <img src="pics/delivery2.png" alt="">
+            </h5>
+            <div class="service_txt">
+              <h4>Livraison gratuite</h4>
+              <p> Rapide et gratuit</p>
+            </div>
+          </li>
+          <li>
+            <h5><img src="pics/customization1.png" alt=""></h5>
+            <div class="service_txt">
+              <h4>Personnalisation</h4>
+              <p> Faites votre propre écussons</p>
+            </div>
+          </li>
+          <li id="lastone">
+            <h5>
+              <img src="pics/phone3.png" alt="">
+            </h5>
+            <div class="service_txt">
+              <h4>Contact</h4>
+              <p> N'hésitez pas à nous contacter! </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mod_help">
+        <div class="ecusson">
+          <img src="pics/logo4.png" alt="">
+        </div>
+
+        <div class="ecusson">
+          <dl>
+            <dt>
+              A PROPOS
+            </dt>
+            <dd>
+              <a href="">Mode d'emploi</a>
+            </dd>
+            <dd>
+              <a href="">Questions fréquentes</a>
+            </dd>
+            <dd>
+              <a href="">Livraisons et retours</a>
+            </dd>
+            <dd>
+              <a href="">Espace client</a>
+            </dd>
+          </dl>
+        </div>
+
+        <div class=ecusson>
+          <dl>
+            <dt>TROUVEZ-NOUS</dt>
+            <dd> 2 Rue du Doyen-Gabriel-Marty</dd>
+            <dd> 31000 Toulouse</dd>
+            <dd>Tél : +33(0)5 61 63 35 00</dd>
+            <dd>Fax : +33(0)5 61 63 37 98</dd>
+          </dl>
+        </div>
+
+        <div class=ecusson>
+          <div class="socialtitle">
+            SUIVEZ-NOUS SUR :
+          </div>
+          <div class="socialpic">
+            <div class="pic1">
+              <a href="https://www.instagram.com/?hl=zh-cn" target="_blank">
+                <img src="pics/instagram.png" alt="">
+              </a>
+            </div>
+            <div class="pic1">
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="pics/facebook.png" alt="">
+              </a>
+            </div>
+            <div class="pic1">
+              <a href="https://twitter.com/explore" target="_blank">
+                <img src="pics/twitter.png" alt="">
+              </a>
+            </div>
+            <div class="pic1">
+              <a href="https://www.youtube.com/" target="_blank">
+                <img src="pics/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footer-bottom">
+        <p>
+          <a href="#">English version</a>&nbsp;&minus;
+          <a href="#">Conditions générales de vente</a>&nbsp;&minus;
+          <a href="#">Mentions légales </a>&nbsp;&minus;
+          <a href="#">Politique de confidentialité</a>&nbsp;&minus;
+          <a href="#">Paiement sécurisé</a>
+        </p>
+        <div class="copyright">
+          <p class="groupe"><br> Créé par David Gomez Prieto, Nour
+            Khalfaoui, Aymeric
+            Azaïs,
+            Hui-Yang Li, Jinhua
+            Wang et Wendeline Swart - étudiants en L3 TI MIASHS, UT1 Toulouse
+            <br> <br> Tous droits réservés - COSMODATA&copy;
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
+
+  <script type="text/javascript">
+    function verification() {
+      var nom = document.getElementById("nom")
+      var prenom = document.getElementById("prenom")
+      var tel = document.getElementById("tel")
+      var email = document.getElementById("email")
+      var valide_tel = /^0[1-9]\d{8}$/
+      var valide_email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (nom.value === '') {
+        alert("le champ Nom est vide!");
+        return false;
+      }
+      if (prenom.value === '') {
+        alert("le champ Prénom est vide!");
+        return false;
+      }
+      if (tel.value === '') {
+        alert("le champ Numéro de téléphone est vide!");
+        return false;
+      }
+      if (email.value === '') {
+        alert("le champ E-mail est vide!");
+        return false;
+      }
+      if (!valide_tel.test(tel.value)) {
+        alert("le format de numéro de téléphone est incorrete!");
+        return false;
+      }
+      if (!valide_email.test(email.value)) {
+        alert("le format de E-mail est incorrete!");
+        return false;
+      }
+    }
+  </script>
+  </script>
+</body>
+
+
+</html>
